@@ -1,0 +1,42 @@
+{
+  "version": "1",
+  "line": [
+    {"x": 1, "alpha": 18, "beta": 13}, {"x": 2, "alpha": 22, "beta": 16},
+    {"x": 3, "alpha": 20, "beta": 18}, {"x": 4, "alpha": 27, "beta": 17},
+    {"x": 5, "alpha": 31, "beta": 21}, {"x": 6, "alpha": 29, "beta": 24},
+    {"x": 7, "alpha": 34, "beta": 22}, {"x": 8, "alpha": 38, "beta": 27},
+    {"x": 9, "alpha": 36, "beta": 30}, {"x": 10, "alpha": 42, "beta": 28},
+    {"x": 11, "alpha": 46, "beta": 32}, {"x": 12, "alpha": 44, "beta": 35}
+  ],
+  "bar": [
+    {"label": "A", "value": 28}, {"label": "B", "value": 42},
+    {"label": "C", "value": 34}, {"label": "D", "value": 53},
+    {"label": "E", "value": 39}, {"label": "F", "value": 47},
+    {"label": "G", "value": 31}, {"label": "H", "value": 44}
+  ],
+  "scatter": [
+    {"x": 8, "y": 15}, {"x": 13, "y": 26}, {"x": 18, "y": 21},
+    {"x": 22, "y": 35}, {"x": 27, "y": 31}, {"x": 31, "y": 43},
+    {"x": 37, "y": 39}, {"x": 42, "y": 51}, {"x": 47, "y": 48},
+    {"x": 52, "y": 62}, {"x": 58, "y": 57}, {"x": 63, "y": 69}
+  ],
+  "donut": [
+    {"label": "A", "value": 32}, {"label": "B", "value": 24},
+    {"label": "C", "value": 18}, {"label": "D", "value": 15},
+    {"label": "E", "value": 11}
+  ],
+  "time": [
+    {"date": "2025-01-01", "alpha": 18, "beta": 13},
+    {"date": "2025-02-01", "alpha": 22, "beta": 16},
+    {"date": "2025-03-01", "alpha": 20, "beta": 18},
+    {"date": "2025-04-01", "alpha": 27, "beta": 17},
+    {"date": "2025-05-01", "alpha": 31, "beta": 21},
+    {"date": "2025-06-01", "alpha": 29, "beta": 24},
+    {"date": "2025-07-01", "alpha": 34, "beta": 22},
+    {"date": "2025-08-01", "alpha": 38, "beta": 27},
+    {"date": "2025-09-01", "alpha": 36, "beta": 30},
+    {"date": "2025-10-01", "alpha": 42, "beta": 28},
+    {"date": "2025-11-01", "alpha": 46, "beta": 32},
+    {"date": "2025-12-01", "alpha": 44, "beta": 35}
+  ]
+}
