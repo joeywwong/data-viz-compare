@@ -1,4 +1,4 @@
-import { ResponsiveContainer, LineChart, Line, BarChart, Bar, ScatterChart, Scatter, PieChart, Pie, Cell, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts'
+import { ResponsiveContainer, LineChart, Line, BarChart, Bar, ScatterChart, Scatter, PieChart, Pie, Cell, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ReferenceLine } from 'recharts'
 import { colors } from '../data/charts'
 import type { AdapterProps } from '../lib/registry'
 
@@ -23,14 +23,24 @@ export default function RechartsChart({ spec }: AdapterProps) {
       </ScatterChart>
     </ResponsiveContainer>
   </div>
-  if (spec.kind === 'bar') return <div className="chart-canvas">
+  if (spec.kind === 'bar' || spec.kind === 'histogram' || spec.kind === 'horizontal-bar') return <div className="chart-canvas">
     <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={spec.points} margin={{ top: 16, right: 22, bottom: 27, left: 26 }}>
-        <CartesianGrid {...grid} vertical={false} /><XAxis dataKey="label" tick={axis} label={{ value: spec.xLabel, position: 'insideBottom', offset: -16, ...axis }} />
-        <YAxis tick={axis} label={{ value: spec.yLabel, angle: -90, position: 'insideLeft', ...axis }} /><Tooltip /><Bar dataKey="value" name="Value" fill={colors.alpha} radius={[5, 5, 0, 0]} isAnimationActive={false} />
+      <BarChart data={spec.points} layout={spec.kind === 'horizontal-bar' ? 'vertical' : 'horizontal'} barCategoryGap={spec.kind === 'histogram' ? '1%' : '20%'} margin={{ top: 16, right: 22, bottom: 27, left: 26 }}>
+        <CartesianGrid {...grid} vertical={spec.kind === 'horizontal-bar'} horizontal={spec.kind !== 'horizontal-bar'} /><XAxis type={spec.kind === 'horizontal-bar' ? 'number' : 'category'} dataKey={spec.kind === 'horizontal-bar' ? undefined : 'label'} tick={axis} label={{ value: spec.xLabel, position: 'insideBottom', offset: -16, ...axis }} />
+        <YAxis type={spec.kind === 'horizontal-bar' ? 'category' : 'number'} dataKey={spec.kind === 'horizontal-bar' ? 'label' : undefined} width={spec.kind === 'horizontal-bar' ? 70 : 60} tick={axis} label={spec.kind === 'horizontal-bar' ? undefined : { value: spec.yLabel, angle: -90, position: 'insideLeft', ...axis }} /><Tooltip /><Bar dataKey="value" name={spec.kind === 'histogram' ? 'Count' : 'Value'} fill={colors.alpha} radius={spec.kind === 'histogram' ? 0 : 5} isAnimationActive={false} />
       </BarChart>
     </ResponsiveContainer>
   </div>
+  if (spec.kind === 'roc') return <div className="chart-canvas">
+    <ResponsiveContainer width="100%" height="100%">
+      <LineChart data={spec.points} margin={{ top: 16, right: 22, bottom: 27, left: 26 }}>
+        <CartesianGrid {...grid} /><XAxis type="number" dataKey="fpr" domain={[0, 1]} tick={axis} label={{ value: spec.xLabel, position: 'insideBottom', offset: -16, ...axis }} />
+        <YAxis type="number" domain={[0, 1]} tick={axis} label={{ value: spec.yLabel, angle: -90, position: 'insideLeft', ...axis }} /><Tooltip /><ReferenceLine segment={[{ x: 0, y: 0 }, { x: 1, y: 1 }]} stroke={colors.beta} strokeDasharray="5 5" />
+        <Line dataKey="tpr" name="Classifier" stroke={colors.alpha} strokeWidth={3} dot={{ r: 3 }} isAnimationActive={false} />
+      </LineChart>
+    </ResponsiveContainer>
+  </div>
+  if (spec.kind !== 'line' && spec.kind !== 'time') return null
   const data: { label: string; alpha: number; beta: number }[] = spec.kind === 'time' ? spec.points.map(p => ({ alpha: p.alpha, beta: p.beta, label: p.date.slice(0, 7) })) : spec.points.map(p => ({ alpha: p.alpha, beta: p.beta, label: String(p.x) }))
   return <div className="chart-canvas">
     <ResponsiveContainer width="100%" height="100%">

@@ -1,10 +1,34 @@
 import type { ComponentType } from 'react'
-import type { ChartSpec } from '../data/charts'
+import type { ChartId, ChartSpec } from '../data/charts'
 
 export const libraryIds = ['chartjs', 'echarts', 'recharts', 'd3', 'plotly', 'apex'] as const
 export type LibraryId = typeof libraryIds[number]
 export type AdapterProps = { spec: ChartSpec }
 export type AdapterComponent = ComponentType<AdapterProps>
+
+// Capability means this site has a native example with its installed package or bundle.
+// It does not claim that a plugin, extension, or custom drawing could never add one.
+export const unsupportedCharts: Partial<Record<ChartId, Partial<Record<LibraryId, string>>>> = {
+  heatmap: {
+    chartjs: 'No built-in heatmap chart in Chart.js; a plugin or custom drawing is required.',
+    recharts: 'No native heatmap component in Recharts; custom SVG cells are required.',
+    plotly: 'The installed Plotly.js basic bundle does not include heatmap traces.',
+  },
+  confusion: {
+    chartjs: 'No built-in matrix chart in Chart.js; a plugin or custom drawing is required.',
+    recharts: 'No native matrix component in Recharts; custom SVG cells are required.',
+    plotly: 'The installed Plotly.js basic bundle does not include heatmap traces.',
+  },
+  box: {
+    chartjs: 'No built-in box plot in Chart.js; a plugin is required.',
+    recharts: 'No native box plot component in Recharts; custom shapes are required.',
+    plotly: 'The installed Plotly.js basic bundle does not include box traces.',
+  },
+}
+
+export function supportNote(chart: ChartId, library: LibraryId): string | undefined {
+  return unsupportedCharts[chart]?.[library]
+}
 
 type LibraryMeta = { name: string; approach: string; interaction: string; react: string; tradeoff: string; docs: string; source: string }
 

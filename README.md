@@ -1,10 +1,12 @@
 # Data Viz Compare
 
-A static, JavaScript-first comparison of how six libraries draw **the same chart type from the same synthetic values**. Choose a chart, inspect one library, compare two, or show all six. The exact values are available below every comparison.
+A static, JavaScript-first comparison of how six libraries draw **the same chart type from the same synthetic values** where that chart is supported by the installed package. Choose a chart, inspect one library, compare two, or show all six support states. The exact values are available below every comparison.
 
 ## What's included
 
-Five chart types: ordinary line, bar, scatter, donut, and dated time series. Each is implemented with Chart.js, Apache ECharts, Recharts, D3, Plotly.js, and ApexCharts: 30 live, code-based examples. The full and short datasets are deterministic. The donut short view groups omitted slices as “Other” so the total remains 100%.
+Eleven chart types: line, bar, scatter, donut, dated time series, histogram, ROC curve, horizontal bar chart, correlation heatmap, confusion matrix, and box plot. The first eight have live examples in all six libraries. Heatmaps, confusion matrices, and box plots have live examples in Apache ECharts, D3, and ApexCharts. The other combinations show an explicit support note. In particular, this project uses the **Plotly.js basic bundle**, which excludes heatmap and box traces. Chart.js and Recharts need a plugin or custom drawing for those examples.
+
+The full and short datasets are deterministic. The donut short view groups omitted slices as “Other” so the total remains 100%; the histogram short view merges adjacent bins and keeps the same total count. Matrix short views select fewer classes or features. All examples use synthetic data.
 
 The display is a qualitative comparison of rendering, interaction, and React integration. It does not claim benchmark results, bundle sizes, or equal accessibility across libraries. A table exposes exact values independent of chart interaction.
 
@@ -27,7 +29,7 @@ The Vite build emits `dist/`. For a GitHub Pages project repository, run `GITHUB
 
 - `src/data/v1/datasets.json`: versioned canonical values, with stable chart IDs.
 - `src/data/charts.ts`: typed chart specifications, labels, units, colors and deterministic short selections.
-- `src/lib/registry.ts`: library metadata and lazy adapter loaders.
+- `src/lib/registry.ts`: library metadata, chart support notes, and lazy adapter loaders.
 - `src/adapters/`: one idiomatic renderer per library; each consumes the same chart specification.
 - `src/App.tsx`: navigation, modes, controls, notes and accessible value table.
 
