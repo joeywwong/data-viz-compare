@@ -61,7 +61,7 @@ function DataTable({ spec }: { spec: ReturnType<typeof getChartSpec> }) {
 export default function App() {
   const [chartId, setChartId] = useState<ChartId>(chartFromHash)
   const [size, setSize] = useState<DataSize>('full')
-  const [mode, setMode] = useState<ViewMode>('compare')
+  const [mode, setMode] = useState<ViewMode>('gallery')
   const [first, setFirst] = useState<LibraryId>('chartjs')
   const [second, setSecond] = useState<LibraryId>('echarts')
   const [pythonView, setPythonView] = useState(location.hash.startsWith('#/python'))
@@ -87,7 +87,7 @@ export default function App() {
         <div className="section-heading"><div><span className="eyebrow">THE COMPARISON WORKSPACE</span><h1>Choose a chart. Compare the craft.</h1><p>Every panel below draws from dataset v1. Switch between a focused view, two libraries or all six. Unsupported combinations are labeled.</p></div><span className="section-count">01 — {chartIds.length}</span></div>
         <nav className="chart-nav" aria-label="Chart types">{chartIds.map(id => <a key={id} href={`#/javascript/${id}`} className={id === chartId ? 'chosen' : ''} aria-current={id === chartId ? 'page' : undefined}><span className="nav-glyph">{chartInfo[id].glyph}</span><span><strong>{chartInfo[id].label}</strong><small>{chartInfo[id].short}</small></span></a>)}</nav>
         <div className="workspace-panel"><div className="panel-top"><div><span className="eyebrow">{chartInfo[chartId].label.toUpperCase()} / DATASET V1</span><h2>{spec.title}</h2><p>{chartInfo[chartId].description}</p></div><div className="dataset-stamp"><span>DATA IN VIEW</span><strong>{describeData(spec)}</strong></div></div>
-          <div className="toolbar"><fieldset className="segmented"><legend>View mode</legend><div>{(['single', 'compare', 'gallery'] as const).map(value => <button key={value} type="button" aria-pressed={mode === value} onClick={() => setMode(value)}>{value === 'gallery' ? 'All six' : value === 'compare' ? 'Side by side' : 'Focus'}</button>)}</div></fieldset>
+          <div className="toolbar"><fieldset className="segmented"><legend>View mode</legend><div>{(['single', 'gallery', 'compare'] as const).map(value => <button key={value} type="button" aria-pressed={mode === value} onClick={() => setMode(value)}>{value === 'gallery' ? 'All six' : value === 'compare' ? 'Side by side' : 'Focus'}</button>)}</div></fieldset>
             <label className="control">Dataset size<select value={size} onChange={e => setSize(e.target.value as DataSize)}><option value="sample">Short sample</option><option value="full">Full sample</option></select></label>
             {mode !== 'gallery' && <label className="control">Library {mode === 'compare' ? 'A' : ''}<select value={first} onChange={e => setFirst(e.target.value as LibraryId)}>{libraryIds.map(id => <option key={id} value={id}>{libraries[id].name}</option>)}</select></label>}
             {mode === 'compare' && <label className="control">Library B<select value={second} onChange={e => setSecond(e.target.value as LibraryId)}>{libraryIds.map(id => <option key={id} value={id}>{libraries[id].name}</option>)}</select></label>}
