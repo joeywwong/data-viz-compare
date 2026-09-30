@@ -1,4 +1,7 @@
 node_modules/
+.venv/
+.mplconfig/
+__pycache__/
 .pnpm-store/
 dist/
 .vite/

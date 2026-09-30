@@ -1,0 +1,442 @@
+[
+  {
+    "datasetVersion": "1",
+    "chartId": "line",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/line/full.svg",
+    "source": "python/generate.py",
+    "title": "Measurements by step"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "line",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/line/sample.svg",
+    "source": "python/generate.py",
+    "title": "Measurements by step"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "bar",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/bar/full.svg",
+    "source": "python/generate.py",
+    "title": "Value by category"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "bar",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/bar/sample.svg",
+    "source": "python/generate.py",
+    "title": "Value by category"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "scatter",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/scatter/full.svg",
+    "source": "python/generate.py",
+    "title": "Paired observations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "scatter",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/scatter/sample.svg",
+    "source": "python/generate.py",
+    "title": "Paired observations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "donut",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/donut/full.svg",
+    "source": "python/generate.py",
+    "title": "Share by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "donut",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/donut/sample.svg",
+    "source": "python/generate.py",
+    "title": "Share by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "time",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/time/full.svg",
+    "source": "python/generate.py",
+    "title": "Monthly measurements"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "time",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/time/sample.svg",
+    "source": "python/generate.py",
+    "title": "Monthly measurements"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "histogram",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/histogram/full.svg",
+    "source": "python/generate.py",
+    "title": "Observation frequency"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "histogram",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/histogram/sample.svg",
+    "source": "python/generate.py",
+    "title": "Observation frequency"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "roc",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/roc/full.svg",
+    "source": "python/generate.py",
+    "title": "Classifier ROC curve"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "roc",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/roc/sample.svg",
+    "source": "python/generate.py",
+    "title": "Classifier ROC curve"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "horizontal-bar",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/horizontal-bar/full.svg",
+    "source": "python/generate.py",
+    "title": "Value by category · horizontal bars"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "horizontal-bar",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/horizontal-bar/sample.svg",
+    "source": "python/generate.py",
+    "title": "Value by category · horizontal bars"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "heatmap",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/heatmap/full.svg",
+    "source": "python/generate.py",
+    "title": "Feature correlations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "heatmap",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/heatmap/sample.svg",
+    "source": "python/generate.py",
+    "title": "Feature correlations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "confusion",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/confusion/full.svg",
+    "source": "python/generate.py",
+    "title": "Classification outcomes"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "confusion",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/confusion/sample.svg",
+    "source": "python/generate.py",
+    "title": "Classification outcomes"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "box",
+    "libraryId": "matplotlib",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/box/full.svg",
+    "source": "python/generate.py",
+    "title": "Measurement spread by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "box",
+    "libraryId": "matplotlib",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/matplotlib/box/sample.svg",
+    "source": "python/generate.py",
+    "title": "Measurement spread by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "line",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/line/full.svg",
+    "source": "python/generate.py",
+    "title": "Measurements by step"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "line",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/line/sample.svg",
+    "source": "python/generate.py",
+    "title": "Measurements by step"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "bar",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/bar/full.svg",
+    "source": "python/generate.py",
+    "title": "Value by category"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "bar",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/bar/sample.svg",
+    "source": "python/generate.py",
+    "title": "Value by category"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "scatter",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/scatter/full.svg",
+    "source": "python/generate.py",
+    "title": "Paired observations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "scatter",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/scatter/sample.svg",
+    "source": "python/generate.py",
+    "title": "Paired observations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "donut",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/donut/full.svg",
+    "source": "python/generate.py",
+    "title": "Share by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "donut",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/donut/sample.svg",
+    "source": "python/generate.py",
+    "title": "Share by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "time",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/time/full.svg",
+    "source": "python/generate.py",
+    "title": "Monthly measurements"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "time",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/time/sample.svg",
+    "source": "python/generate.py",
+    "title": "Monthly measurements"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "histogram",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/histogram/full.svg",
+    "source": "python/generate.py",
+    "title": "Observation frequency"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "histogram",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/histogram/sample.svg",
+    "source": "python/generate.py",
+    "title": "Observation frequency"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "roc",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/roc/full.svg",
+    "source": "python/generate.py",
+    "title": "Classifier ROC curve"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "roc",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/roc/sample.svg",
+    "source": "python/generate.py",
+    "title": "Classifier ROC curve"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "horizontal-bar",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/horizontal-bar/full.svg",
+    "source": "python/generate.py",
+    "title": "Value by category · horizontal bars"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "horizontal-bar",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/horizontal-bar/sample.svg",
+    "source": "python/generate.py",
+    "title": "Value by category · horizontal bars"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "heatmap",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/heatmap/full.svg",
+    "source": "python/generate.py",
+    "title": "Feature correlations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "heatmap",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/heatmap/sample.svg",
+    "source": "python/generate.py",
+    "title": "Feature correlations"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "confusion",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/confusion/full.svg",
+    "source": "python/generate.py",
+    "title": "Classification outcomes"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "confusion",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/confusion/sample.svg",
+    "source": "python/generate.py",
+    "title": "Classification outcomes"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "box",
+    "libraryId": "seaborn",
+    "variant": "full",
+    "format": "svg",
+    "asset": "python/v1/seaborn/box/full.svg",
+    "source": "python/generate.py",
+    "title": "Measurement spread by group"
+  },
+  {
+    "datasetVersion": "1",
+    "chartId": "box",
+    "libraryId": "seaborn",
+    "variant": "sample",
+    "format": "svg",
+    "asset": "python/v1/seaborn/box/sample.svg",
+    "source": "python/generate.py",
+    "title": "Measurement spread by group"
+  }
+]

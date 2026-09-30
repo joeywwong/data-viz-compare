@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="231.12pt" height="254.997969pt" viewBox="0 0 231.12 254.997969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.7, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 254.997969 
+L 231.12 254.997969 
+L 231.12 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 193.997648 176.347918 
+C 200.214338 163.136779 202.993734 148.566704 202.076941 133.994782 
+C 201.160154 119.42286 196.576563 105.316023 188.753099 92.988215 
+C 180.929635 80.660407 170.116985 70.506653 157.322265 63.472698 
+C 144.527546 56.438742 130.160729 52.749969 115.559996 52.749969 
+L 115.559998 85.691409 
+C 124.612452 85.691409 133.519878 87.978448 141.452605 92.339501 
+C 149.385331 96.700553 156.089174 102.99588 160.939722 110.639121 
+C 165.790269 118.282362 168.632095 127.028601 169.200503 136.063193 
+C 169.768915 145.097785 168.04569 154.131231 164.191342 162.322137 
+z
+" style="fill: #4258df; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 83.648022 220.038433 
+C 104.14184 228.15251 126.978163 228.15251 147.471981 220.038433 
+C 167.965799 211.924356 184.612766 196.291807 193.997648 176.347918 
+L 164.191342 162.322137 
+C 158.372715 174.687349 148.051596 184.379529 135.345428 189.410257 
+C 122.639261 194.440985 108.480741 194.440985 95.774574 189.410257 
+z
+" style="fill: #eb7b4a; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 29.043059 144.881148 
+C 30.075861 161.297064 35.759822 177.084883 45.427934 190.391896 
+C 55.096046 203.698909 68.354711 213.983382 83.648022 220.038433 
+L 95.774574 189.410257 
+C 86.292721 185.656125 78.072348 179.279752 72.078119 171.029404 
+C 66.08389 162.779056 62.559834 152.990607 61.919497 142.81274 
+z
+" style="fill: #25a7a0; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 115.560001 52.749969 
+C 103.717816 52.749969 92.000249 55.176556 81.13203 59.879659 
+C 70.263812 64.582762 60.473712 71.463361 52.367179 80.095942 
+C 44.260645 88.728524 38.008323 98.931374 33.996927 110.073457 
+C 29.985531 121.215542 28.299485 133.06233 29.043059 144.881148 
+L 61.919497 142.81274 
+C 61.458481 135.485073 62.503829 128.140064 64.990895 121.231972 
+C 67.47796 114.32388 71.3544 107.998113 76.380451 102.645912 
+C 81.406501 97.293712 87.476363 93.027741 94.214659 90.111817 
+C 100.952955 87.195893 108.217846 85.691409 115.560001 85.691409 
+z
+" style="fill: #9366cf; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172a3d" x="196.072406" y="91.102611" transform="rotate(-0 196.072406 91.102611)">A</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172a3d" x="172.650616" y="105.966533" transform="rotate(-0 172.650616 105.966533)">32%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172a3d" x="150.663179" y="230.857854" transform="rotate(-0 150.663179 230.857854)">B</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172a3d" x="140.451345" y="205.065706" transform="rotate(-0 140.451345 205.065706)">24%</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #172a3d" x="38.414724" y="198.246659" transform="rotate(-0 38.414724 198.246659)">C</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172a3d" x="60.856986" y="181.941404" transform="rotate(-0 60.856986 181.941404)">18%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #172a3d" x="46.047895" y="76.921111" transform="rotate(-0 46.047895 76.921111)">Other</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172a3d" x="66.269598" y="95.910561" transform="rotate(-0 66.269598 95.910561)">26%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172a3d" x="7.2" y="17.077969" transform="rotate(-0 7.2 17.077969)">Share by group</text>
+   </g>
+  </g>
+ </g>
+</svg>
